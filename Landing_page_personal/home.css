@@ -1,0 +1,79 @@
+body{
+    width:100%;
+    height:100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:20px;
+}
+
+.container{
+    width:100%;
+    height:100%;
+    background-image: url(/assets/fondo.jpg);
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter:saturate(1.5);
+    overflow: hidden;
+}
+
+.container_info{
+    max-width:420px;
+    width:100%;
+    height:80%;
+    max-height: 650px;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius:1em;
+    overflow: hidden;
+    box-shadow:10px 10px 10px;
+    transform:rotateY(360deg);
+}
+
+.info_image{
+    width:100%;
+    height:40%;
+    background-color:rgba(34, 31, 31, 0.507);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.image_myperson{
+    width:40%;
+    border-radius: 50%;
+    border:10px inset rgba(194, 22, 37, 0.582);
+}
+
+:hover.image_myperson{
+    border:10px outset rgba(160, 26, 37, 0.582);
+    transform:rotate(3600deg);
+    transition:4s;
+}   
+
+.info_contact{
+    width:100%;
+    height:60%;
+    background-color:rgba(39, 36, 36, 0.335);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    color:rgba(58, 111, 161, 0.856);
+}
+
+b{
+    color:brown;
+    cursor:no-drop;
+}
+
+::selection{
+    background-color: rgba(246, 246, 246, 0.609);
+}
+
+
